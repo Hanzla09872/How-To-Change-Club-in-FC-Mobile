@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How To Change Club in FC Mobile</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+            }
+
+            .btn {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    How To Change Club in FC Mobile
+</header>
+
+<div class="container">
+    <div class="btn-container">
+        <button class="btn" onclick="showSection('guide')">Guide</button>
+        <button class="btn" onclick="showSection('faq')">FAQ</button>
+        <button class="btn" onclick="showSection('conclusion')">Conclusion</button>
+    </div>
+
+    <div id="guide" class="section active">
+        <h2>Guide</h2>
+        <p>Switching clubs in FC Mobile might seem complicated, but it’s actually quite simple when you know the steps. I remember my first attempt—I was stuck in a club where nobody was active, and I didn’t know how to leave. Once I figured it out, it opened up a whole new experience in the game, and I want to help you do the same. Whether you’re searching for an active club, aiming for better rewards, or simply exploring your options, this guide will make the process smooth and easy.</p>
+        <p>By the end of this article, you’ll understand how to change your club, what to expect, and how to make the most of your move. Let’s jump right into the details!</p>
+
+        <h3>Prerequisites for Changing Clubs</h3>
+        <ul>
+            <li><strong>Account Requirements:</strong> Ensure your account is linked to EA Account, Google Play, or Apple ID.</li>
+            <li><strong>Eligibility Criteria:</strong> Make sure you meet the club's requirements, such as team rating or activity level.</li>
+        </ul>
+
+        <h3>Step-by-Step Guide to Changing Clubs</h3>
+        <ul>
+            <li><strong>Access Club Management:</strong> Navigate to the Club section in FC Mobile.</li>
+            <li><strong>Leaving Your Current Club:</strong> Tap the "Leave Club" button in the menu.</li>
+            <li><strong>Finding and Joining a New Club:</strong> Use the search bar to find a new club that suits you.</li>
+        </ul>
+
+        <h3>Potential Challenges and How to Overcome Them</h3>
+        <ul>
+            <li><strong>Transfer Lock and Cooldown Period:</strong> Plan ahead to avoid delays.</li>
+            <li><strong>Membership Restrictions:</strong> Some clubs may have strict criteria, so strengthen your team.</li>
+        </ul>
+
+        <h3>Benefits of Changing Clubs</h3>
+        <ul>
+            <li><strong>Community Aspect:</strong> Meet new players and enjoy teamwork.</li>
+            <li><strong>Enhanced Gameplay Experience:</strong> Boost your progress with club rewards and tournaments.</li>
+        </ul>
+
+        <h3>Advanced Tips for Club Optimization</h3>
+        <ul>
+            <li><strong>Club Management Features:</strong> Use management tools to contribute effectively.</li>
+            <li><strong>Earning In-Game Currency:</strong> Participate in events to earn rewards.</li>
+            <li><strong>Improving Club Rankings:</strong> Contribute to your club’s growth to climb the rankings.</li>
+        </ul>
+
+        <h3>Resources for Further Assistance</h3>
+        <ul>
+            <li>In-game tutorials.</li>
+            <li>EA’s official help pages and YouTube videos.</li>
+        </ul>
+    </div>
+
+    <div id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>What happens to my stats when I leave a club?</strong> Your stats remain intact, but any club-specific contributions may reset.</li>
+            <li><strong>Can I rejoin my old club later?</strong> Yes, but you might need approval from the admin again.</li>
+            <li><strong>Are there costs associated with changing clubs?</strong> No, but you may lose access to rewards tied to your old club.</li>
+        </ul>
+    </div>
+
+    <div id="conclusion" class="section">
+        <h2>Conclusion</h2>
+        <p>Switching clubs in FC Mobile doesn’t have to be a headache. By following the steps outlined here, you can make the process smooth and stress-free. Remember to plan ahead, choose a club that fits your style, and enjoy the benefits of being part of an active team.</p>
+        <p>Now it’s your turn—go out there and find the perfect club for you!</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 FC Mobile Club Switching Guide
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show the selected section
+        const activeSection = document.getElementById(sectionId);
+        activeSection.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
