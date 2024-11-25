@@ -1,0 +1,100 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Function to show the main guide content
+def show_guide_content():
+    content = """
+    How To Change Club in FC Mobile
+    
+    Switching clubs in FC Mobile might seem complicated, but it’s actually quite simple when you know the steps. 
+    I remember my first attempt—I was stuck in a club where nobody was active, and I didn’t know how to leave. 
+    Once I figured it out, it opened up a whole new experience in the game, and I want to help you do the same. 
+    Whether you’re searching for an active club, aiming for better rewards, or simply exploring your options, 
+    this guide will make the process smooth and easy.
+    
+    By the end of this article, you’ll understand how to change your club, what to expect, and how to make the most of your move. 
+    Let’s jump right into the details!
+    
+    Prerequisites for Changing Clubs
+    - Ensure your account is linked (EA, Google Play, or Apple ID).
+    - Check for eligibility criteria like team rating or activity level.
+    
+    Step-by-Step Guide to Changing Clubs
+    - Access Club Management section in FC Mobile.
+    - Leave your current club by confirming the action.
+    - Use search to find and join a new club.
+    
+    Potential Challenges:
+    - Transfer lock and cooldown periods after leaving a club.
+    - Membership restrictions (team rating, achievements).
+    
+    Benefits of Changing Clubs:
+    - Meet new players, experience a community aspect.
+    - Enhanced gameplay experience with rewards and tournaments.
+    
+    Advanced Tips:
+    - Take advantage of management tools once in the new club.
+    - Participate actively to improve club rankings and earn rewards.
+    
+    Resources for Further Assistance:
+    - In-game tutorials, EA’s official help, and YouTube videos.
+    """
+    guide_label.config(text=content)
+
+# Function to show FAQ section
+def show_faq():
+    faq = """
+    Frequently Asked Questions:
+    
+    1. What happens to my stats when I leave a club?
+    - Your stats remain intact, but any club-specific contributions may reset.
+    
+    2. Can I rejoin my old club later?
+    - Yes, but you might need approval from the admin again.
+    
+    3. Are there costs associated with changing clubs?
+    - No, but you may lose access to rewards tied to your old club.
+    """
+    guide_label.config(text=faq)
+
+# Function to show conclusion section
+def show_conclusion():
+    conclusion = """
+    Conclusion:
+    
+    Switching clubs in FC Mobile doesn’t have to be a headache. By following the steps outlined here, you can make the process smooth and stress-free. 
+    Remember to plan ahead, choose a club that fits your style, and enjoy the benefits of being part of an active team.
+    """
+    guide_label.config(text=conclusion)
+
+# Create the main window
+root = tk.Tk()
+root.title("How To Change Club in FC Mobile")
+root.geometry("600x500")
+
+# Title label
+title_label = tk.Label(root, text="FC Mobile Club Switching Guide", font=("Arial", 18, "bold"))
+title_label.pack(pady=10)
+
+# Label for displaying the guide content
+guide_label = tk.Label(root, text="", font=("Arial", 12), justify="left", wraplength=550)
+guide_label.pack(pady=20)
+
+# Buttons to navigate sections
+button_frame = tk.Frame(root)
+button_frame.pack(pady=10)
+
+btn_guide = tk.Button(button_frame, text="Guide", command=show_guide_content, width=20)
+btn_guide.grid(row=0, column=0, padx=5)
+
+btn_faq = tk.Button(button_frame, text="FAQ", command=show_faq, width=20)
+btn_faq.grid(row=0, column=1, padx=5)
+
+btn_conclusion = tk.Button(button_frame, text="Conclusion", command=show_conclusion, width=20)
+btn_conclusion.grid(row=0, column=2, padx=5)
+
+# Show the initial content (Guide)
+show_guide_content()
+
+# Run the main loop
+root.mainloop()
